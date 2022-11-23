@@ -24,7 +24,7 @@ if today in birthday_dict:
             connection.starttls()
             connection.login(user=my_email, password=password)
             connection.sendmail(from_addr=my_email,
-                                to_addrs="joel.paull96@hotmail.co.uk",
+                                to_addrs=data_row['email'],
                                 msg=f"Subject:Happy Birthday\n\n{new_data}")
                            
 File 2: birthday.csv
